@@ -56,6 +56,12 @@ android_library {
         "Extensions/res",
     ],
 
+    srcs: ["src/**/*.java"],
+    resource_dirs: [
+        "res",
+        "res-pixel",
+    ],
+
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
         "androidx.slice_slice-builders",
@@ -98,6 +104,7 @@ android_library {
         "androidx.navigation_navigation-runtime-ktx",
         "androidx.navigation_navigation-ui-ktx",
         "kotlin-stdlib",
+        "SettingsGoogle-lib",
     ],
 
     libs: [

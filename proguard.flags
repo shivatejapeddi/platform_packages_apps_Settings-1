@@ -80,3 +80,15 @@
 -keepattributes Signature
 # Retain declared checked exceptions for use by a Proxy instance.
 -keepattributes Exceptions
+
+-keep class com.google.** { *; }
+-keep class vendor.** { *; }
+-keep class com.android.wsuinterface.** { *; }
+
+# For reflection
+-keepattributes InnerClasses
+-keep class **.R
+-keep class **.R$* {
+    <fields>;
+}
+
