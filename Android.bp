@@ -48,18 +48,11 @@ android_library {
         "src/**/*.java",
         "Extensions/src/**/*.java",
     ],
-
-    aaptflags: ["--extra-packages org.aospextended.extensions",],
-
-    resource_dirs: [
-        "res",
-        "Extensions/res",
-    ],
-
-    srcs: ["src/**/*.java"],
+    
     resource_dirs: [
         "res",
         "res-pixel",
+        "Extensions/res",        
     ],
 
     static_libs: [
